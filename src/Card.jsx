@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Count from './Count'
-import CountButton from './CountButton'
+import ButtonContainer from './ButtonContainer'
 import ResetButton from './ResetButton'
 import Title from './Title'
 
@@ -13,7 +13,7 @@ export default function Card() {
 			<Title/>
 			<Count count={count}/>
 			<ResetButton  setCount={setCount} count={count}/>
-			<CountButton setCount={setCount}/>
+			<ButtonContainer setCount={setCount}/>
 		</div>
 		
 	)
