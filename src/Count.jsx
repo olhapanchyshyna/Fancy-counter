@@ -1,5 +1,5 @@
-export default function Count() {
+export default function Count({count}) {
 	return (
-		<div className='count'>0</div>
+		<div className='count'>{count}</div>
 	)
 }
