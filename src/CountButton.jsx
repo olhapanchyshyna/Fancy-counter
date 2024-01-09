@@ -5,12 +5,14 @@ export default function CountButton({ setCount, type }) {
 	return (
 		<button
 			className='count-btn'
-			onClick={() => {
+			onClick={(e) => {
 				{
 					type === 'minus'
 						? setCount(prev => prev > 0 ? prev - 1 : 0)
 						: setCount(prev => prev < 10 ? prev + 1 : 10)
 				}
+				e.currentTarget.blur();
+
 			}}
 		>
 			{type === 'minus' ? (
